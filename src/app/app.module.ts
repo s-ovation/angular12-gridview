@@ -6,9 +6,11 @@ import { AppComponent } from './app.component'
 import { ItemsComponent } from './item/items.component'
 import { ItemDetailComponent } from './item/item-detail.component'
 
+import { GridViewModule } from '@proplugins/nativescript-grid-view/angular';
+
 @NgModule({
   bootstrap: [AppComponent],
-  imports: [NativeScriptModule, AppRoutingModule],
+  imports: [NativeScriptModule, AppRoutingModule, GridViewModule],
   declarations: [AppComponent, ItemsComponent, ItemDetailComponent],
   providers: [],
   schemas: [NO_ERRORS_SCHEMA],
